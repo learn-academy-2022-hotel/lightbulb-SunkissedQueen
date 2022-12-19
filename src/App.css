@@ -1,0 +1,37 @@
+h1 {
+  text-align: center;
+}
+
+.lightbulb {
+  display: inline-block;
+  justify-content: space-around;
+  border: 2px solid black;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  border-radius: 30px;
+  /* float: left; */
+  overflow: hidden;
+}
+
+.lightOffPic {
+  display: inline-block;
+  border: 2px solid gray;
+  border-radius: 30px;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+.lightOnPic {
+  display: inline-block;
+  border: 2px solid yellow;
+  border-radius: 30px;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.bulbWrap {
+  /* overflow: hidden; */
+  text-align: center;
+}
