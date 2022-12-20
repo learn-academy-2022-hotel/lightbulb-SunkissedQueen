@@ -20,10 +20,38 @@ When creating an application it is important to think about the organization of 
 
 **Branch**: setup-on-off
 
+- basic functional component
+```javascript
+    import React from "react"
+
+    const App = () => {
+      return (
+        <>
+          <h1>Turn on the Christmas lights!</h1>
+        </>
+      )
+    }
+
+    export default App
+```
+
 - As a user, I can see a square box on the screen with a black border and a white background.
-- As a user, I can see the word "off" inside the box.
+  - already provided
+
 - As a user, every time I click on the box the word toggles between the word "off" and the word "on."
+  <!-- lightsOn function -->
+  - create function named lightsOn to 
+  - no input
+  - use set function to change value of state variable `lightSwitchStatus` to "on"
+  - place a button `ON` outside of box to perform function call
+  <!-- lightsOff function -->
+  - create function named lightsOff to 
+  - no input
+  - use set function to change value of state variable `lightSwitchStatus` to "off"
+  - place a button `OFF` outside of box to perform function call
+
 - As a user, when I see the word "off" the background color of the box is white.
+
 - As a user, when I see the word "on" the background color of the box is yellow.
 - As a user, I can see many boxes on the page all acting independently of one another.
 
