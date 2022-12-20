@@ -51,9 +51,14 @@ When creating an application it is important to think about the organization of 
   - place a button `OFF` outside of box to perform function call
 
 - As a user, when I see the word "off" the background color of the box is white.
+  - add state variable to store boolean value for whether or not switch was on
+  - add styling attribute to the lightbulb using ternary operator to change background color to yellow for a true condition and white if false condition
 
 - As a user, when I see the word "on" the background color of the box is yellow.
+  - covered by previous code
+  
 - As a user, I can see many boxes on the page all acting independently of one another.
+  - add component calls
 
 **Branch**: add-images
 
