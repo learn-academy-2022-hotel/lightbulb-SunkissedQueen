@@ -32,12 +32,20 @@ const LightSwitch = (props) => {
         {props.status}
         <img
           src={switchOnOff ? SwitchImage2 : SwitchImage1}
-          alt="image of light switch"
+          alt={
+            switchOnOff ? 
+            "white rectangular box encasing a light switch pointing up and displaying the word on in gray uppercase letters" : 
+            "white rectangular box encasing a light switch pointing down and displaying the word off in gray uppercase letters"
+          }
           style={{ width: 100, height: 100 }}
         />
         <img
           src={switchOnOff ? LightImage2 : LightImage1}
-          alt="image of light bulb"
+          alt={
+            switchOnOff ? 
+            "long black cord attached to the top of a clear light bulb" : 
+            "long black cord attached to the top of a yellow light bulb"
+          }
           style={{ width: 100, height: 200 }}
         />
       </div>
