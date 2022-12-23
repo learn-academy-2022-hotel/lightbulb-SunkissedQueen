@@ -40,12 +40,12 @@ When creating an application it is important to think about the organization of 
 
 - As a user, every time I click on the box the word toggles between the word "off" and the word "on."
   <!-- lightsOn function -->
-  - create function named lightsOn to 
+  - create function named lightsOn  
   - no input
   - use set function to change value of state variable `lightSwitchStatus` to "on"
   - place a button `ON` outside of box to perform function call
   <!-- lightsOff function -->
-  - create function named lightsOff to 
+  - create function named lightsOff 
   - no input
   - use set function to change value of state variable `lightSwitchStatus` to "off"
   - place a button `OFF` outside of box to perform function call
@@ -58,7 +58,30 @@ When creating an application it is important to think about the organization of 
   - covered by previous code
   
 - As a user, I can see many boxes on the page all acting independently of one another.
-  - add component calls
+  - adding component calls did not allow independent interaction
+  - add state variable `extraLight` to store an empty array
+  - <!-- addLight function -->
+  - create function named addLight 
+    - input: array
+    - use set function to change value of state variable `extraLight` 
+    - by copying the value of current state with spread operator 
+    - then adding a number dynamically by creating a calculation to add 1 to the amount of values currently in the array 
+    - using the .length built-in method to evaluate the amount of values in the array
+    - return an array with one more value than the previous array
+  - place a button `More lights` outside of box to perform function call
+    - iterate across the array using high order function `.map()` to evaluate each value in the array
+    - each value will be represented by a component call
+  - <!-- removeLight function -->
+  - create function named removeLight 
+  - input: array
+  - use set function to change value of state variable `extraLight` 
+    - by removing the last value in the array using the slice built-in method 
+    - the indices used will be provided from the current state of the array
+    - The 0th index is the first value and the last index will be provided dynamically by subtracting 1 from the current amount of values.
+    - return an array with one less value than the previous array
+  - place a button `Less lights` outside of box to perform function call
+
+  - Lights were not acting independently. Had to place logic on same file as the nested components.
 
 **Branch**: add-images
 
