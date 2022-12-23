@@ -26,17 +26,19 @@ const LightSwitch = (props) => {
         className="lightbulb"
         onClick={lightsOnOff}
         style={{
-          backgroundColor: switchOnOff ? "yellow" : "white",
+          backgroundColor: switchOnOff ? "bisque" : "white",
         }}
       >
         {props.status}
         <img
           src={switchOnOff ? SwitchImage2 : SwitchImage1}
           alt="image of light switch"
+          style={{ width: 100, height: 100 }}
         />
         <img
           src={switchOnOff ? LightImage2 : LightImage1}
           alt="image of light bulb"
+          style={{ width: 100, height: 200 }}
         />
       </div>
     </>
