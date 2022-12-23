@@ -86,6 +86,10 @@ When creating an application it is important to think about the organization of 
 **Branch**: add-images
 
 - As a user, instead of seeing a box I can see a picture of a light switch in the "off" position.
+  - images are already provided on src/assets
+  - choose some different images for the lightbulbs
+  - used ternary operator on source attribute of image tag got light switch and light bulb
+  
 - As a user, when I click on the light switch it turns "on".
 - As a user, when the light switch is "off" I see a white light bulb.
 - As a user, when I turn the switch "on" I see a yellow light bulb.
