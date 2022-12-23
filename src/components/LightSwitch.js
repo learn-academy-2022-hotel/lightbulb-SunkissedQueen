@@ -1,4 +1,8 @@
 import React, { useState } from "react"
+import LightImage1 from "../assets/clearLight.png"
+import LightImage2 from "../assets/yellowLight.png"
+import SwitchImage1 from "../assets/switchOff.png"
+import SwitchImage2 from "../assets/switchOn.png"
 
 const LightSwitch = (props) => {
 
@@ -26,6 +30,14 @@ const LightSwitch = (props) => {
         }}
       >
         {props.status}
+        <img
+          src={switchOnOff ? SwitchImage2 : SwitchImage1}
+          alt="image of light switch"
+        />
+        <img
+          src={switchOnOff ? LightImage2 : LightImage1}
+          alt="image of light bulb"
+        />
       </div>
     </>
   )
