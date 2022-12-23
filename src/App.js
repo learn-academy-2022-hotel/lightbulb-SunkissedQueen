@@ -1,14 +1,14 @@
 import React, { useState } from "react"
 import "./App.css"
-import LightSwitch from "./components/LightSwitch"
+import Bulb from "./components/Bulb"
 
 const App = () => {
-  const [lightSwitchStatus, setLightSwitchStatus] = useState("off")
 
   return (
     <>
       <h1>Lightbulb Challenge</h1>
-      <LightSwitch />
+      <h2>Turn the lights on and off!</h2>
+      <Bulb />
     </>
   )
 }
