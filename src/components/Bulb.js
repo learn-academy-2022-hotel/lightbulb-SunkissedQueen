@@ -14,13 +14,23 @@ const Bulb = (props) => {
 
   return (
     <>
-      <button onClick={addLight}>More lights</button>
-      <button onClick={removeLight}>Less lights</button>
-      {extraLight.map((value) => {
-        return(
-          <LightSwitch />
-        )
-      })}
+      <h2>Turn the lights on and off!</h2>
+      <div className="center">
+        <button onClick={addLight}>
+          More lights
+        </button>
+        <button onClick={removeLight}>
+          Less lights
+        </button>
+      </div>
+      {extraLight.map((value, index) => 
+          <div
+            key={index} 
+            className="col"
+          >
+            <LightSwitch />
+          </div>
+      )}
     </>
   )
 }

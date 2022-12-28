@@ -99,9 +99,20 @@ When creating an application it is important to think about the organization of 
 **Branch**: additional-switches
 
 - As a user, I can start with no light bulbs or switches on the screen.
+  - covered by previous code
 - As a user, I can see a button to add a light bulb and corresponding switch.
+  - covered by previous code
 - As a user, I can see a button to remove a light bulb and corresponding switch.
+  - covered by previous code
+
 - As a user, every time I click the add button, I can add an additional light bulb and corresponding switch that acts independently of the other light bulbs and corresponding switches.
+  - images are stacking on top of each other
+  - added column
+  - https://www.w3schools.com/howto/howto_js_image_grid.asp
+  - https://stackabuse.com/resizing-images-with-react/
+  - https://www.javatpoint.com/how-to-center-a-button-in-css
+  - https://www.w3schools.com/cssref/css3_pr_box-shadow.php
+
 - As a user, every time I click the remove button, I can remove the last light bulb and corresponding switch in the series.
 
 ### 🗂 Assets
