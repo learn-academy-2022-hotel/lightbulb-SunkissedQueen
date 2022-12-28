@@ -111,6 +111,7 @@ When creating an application it is important to think about the organization of 
   - https://www.w3schools.com/howto/howto_js_image_grid.asp
   - https://stackabuse.com/resizing-images-with-react/
   - https://www.javatpoint.com/how-to-center-a-button-in-css
+  - https://www.w3schools.com/cssref/css3_pr_box-shadow.php
 
 - As a user, every time I click the remove button, I can remove the last light bulb and corresponding switch in the series.
 

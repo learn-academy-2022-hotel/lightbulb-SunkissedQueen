@@ -6,7 +6,6 @@ const App = () => {
   return (
     <>
       <h1>Lightbulb Challenge</h1>
-      <h2>Turn the lights on and off!</h2>
       <Bulb />
     </>
   )

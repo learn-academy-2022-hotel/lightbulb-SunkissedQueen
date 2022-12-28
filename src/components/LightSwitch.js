@@ -8,15 +8,11 @@ const LightSwitch = (props) => {
 
   const [lightSwitchStatus, setLightSwitchStatus] = useState("off")
 
-  const [switchOnOff, setSwitchOnOff] = useState(false)
-
   const lightsOnOff = () => {
     if(lightSwitchStatus === "off") {
       setLightSwitchStatus("on")
-      setSwitchOnOff(true)
     } else {
       setLightSwitchStatus("off")
-      setSwitchOnOff(false)
     }
   }
   
@@ -24,25 +20,26 @@ const LightSwitch = (props) => {
     <>
       <div 
         className="lightbulb"
-        onClick={lightsOnOff}
         style={{
-          backgroundColor: switchOnOff ? "bisque" : "white",
+          backgroundColor: lightSwitchStatus === "on" ? "#ffe4c4" : "#ffffff", 
+          boxShadow: lightSwitchStatus === "on" ? "5px 5px 3px #ffe4c4, 10px 10px 8px #888888" : "5px 5px 3px #888888"
         }}
       >
-        {props.status}
+        <section onClick={lightsOnOff}>
+          <img
+            src={lightSwitchStatus === "on" ? SwitchImage2 : SwitchImage1}
+            alt={
+              lightSwitchStatus === "on" ? 
+              "white rectangular box encasing a light switch pointing up and displaying the word on in gray uppercase letters" : 
+              "white rectangular box encasing a light switch pointing down and displaying the word off in gray uppercase letters"
+            }
+            style={{ width: 100, height: 100 }}
+          />
+        </section>
         <img
-          src={switchOnOff ? SwitchImage2 : SwitchImage1}
+          src={lightSwitchStatus === "on" ? LightImage2 : LightImage1}
           alt={
-            switchOnOff ? 
-            "white rectangular box encasing a light switch pointing up and displaying the word on in gray uppercase letters" : 
-            "white rectangular box encasing a light switch pointing down and displaying the word off in gray uppercase letters"
-          }
-          style={{ width: 100, height: 100 }}
-        />
-        <img
-          src={switchOnOff ? LightImage2 : LightImage1}
-          alt={
-            switchOnOff ? 
+            lightSwitchStatus === "on" ? 
             "long black cord attached to the top of a clear light bulb" : 
             "long black cord attached to the top of a yellow light bulb"
           }
